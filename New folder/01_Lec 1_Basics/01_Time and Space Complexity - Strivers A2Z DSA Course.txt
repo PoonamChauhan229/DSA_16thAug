@@ -1,0 +1,47 @@
+What is Time Complexity?
+>Any interview, we write the code , they judge on us on the basis of Time Complexity.
+
+Time complexity != Time Taken
+
+Same code , if we run on 2 machines
+1- machine takes 2s
+2- machine takes 1s
+
+Depending upon the system the time taken to execute the code is different,it is dependant on configuration,hence Time complexity != Time Taken
+
+So Time Compexity?
+Rate at which the time taken increases with respect to input size.
+
+Time Complexity > Big-On Notation -> O(timetaken)
+timetaken > No of steps taken to execute the code .
+So we cannot keep on manually counting the steps
+So Time Complexity should always be calculated in terms of 
+>worst case scenario
+>Aviod constants
+>avoid lower values
+
+Why Worst case
+
+for(int i=1;i<=5;i++){
+    cout<< "Raj";
+}
+>> 5*3= 15 times execution
+>> O(15) 
+It a number and we dont represent the code in terms of number .
+for(int i=1;i<=N;i++){
+    cout<< "Raj";
+}
+>> O(3N)  -- This is the time Complexity
+
+Now there are 3 cases,
+
+Snippet of Code :
+if(marks<25)         cout <<"grade D"
+else if(marks<45)    cout <<"grade C"
+else if(marks<65)    cout <<"grade B"
+else                 cout <<"grade A"
+
+Best Case                  Average Case               Worst Case
+
+Vide End :11:11
+
